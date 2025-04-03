@@ -1,4 +1,5 @@
 import {PortalProvider} from '@gorhom/portal';
+import {COLORS} from '@theme';
 import MainStack from 'navigation/RootStack';
 import {SafeAreaView} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';

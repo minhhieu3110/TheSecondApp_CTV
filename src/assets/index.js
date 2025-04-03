@@ -17,6 +17,9 @@ export const icon = {
   icon_time: require('./icon/icon_time.png'),
   icon_price: require('./icon/icon_price.png'),
   icon_cooking: require('./icon/icon_cooking.png'),
+  icon_staff: require('./icon/icon_staff.png'),
+  icon_detail_work: require('./icon/icon_detail_work.png'),
+  icon_times: require('./icon/icon_times.png'),
 };
 export const image = {
   image_san: require('./image/image_san.png'),

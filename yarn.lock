@@ -1792,6 +1792,22 @@
   dependencies:
     color "^4.2.3"
 
+"@react-navigation/elements@^2.3.5":
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-2.3.5.tgz#a7942d3972df5c8ce7d038b4c7bf2c7e8822f745"
+  integrity sha512-vuvlX2ISeyXiIE7hlt8KE1WbN3QV84DElVod1sHtIUUrsR3AwPp86N2RmQ8izpPp/xnErr8t6k3N6e1n8JgxkA==
+  dependencies:
+    color "^4.2.3"
+
+"@react-navigation/material-top-tabs@^7.2.7":
+  version "7.2.7"
+  resolved "https://registry.yarnpkg.com/@react-navigation/material-top-tabs/-/material-top-tabs-7.2.7.tgz#2efa1893ec6feed7bd0343fba50b17f5327b9f87"
+  integrity sha512-C6C6caxqyqxalNIe68MvKRdV8fDq0UvGX8BCHa1zlIdsOxxHUEQMhblopnO+GfdhcMACXKvZrHZZBbGI4KO+3Q==
+  dependencies:
+    "@react-navigation/elements" "^2.3.5"
+    color "^4.2.3"
+    react-native-tab-view "^4.0.8"
+
 "@react-navigation/native-stack@^7.3.3":
   version "7.3.3"
   resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-7.3.3.tgz#0b05b5aea07088ce383ae1a553eb8761fc732b49"
@@ -2898,6 +2914,11 @@ data-view-byte-offset@^1.0.1:
     call-bound "^1.0.2"
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
+
+date-fns@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-4.1.0.tgz#64b3d83fff5aa80438f5b1a633c2e83b8a1c2d14"
+  integrity sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==
 
 dayjs@^1.8.15:
   version "1.11.13"
@@ -5730,6 +5751,11 @@ react-native-is-edge-to-edge@1.1.6:
   resolved "https://registry.yarnpkg.com/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.1.6.tgz#69ec13f70d76e9245e275eed4140d0873a78f902"
   integrity sha512-1pHnFTlBahins6UAajXUqeCOHew9l9C2C8tErnpGC3IyLJzvxD+TpYAixnCbrVS52f7+NvMttbiSI290XfwN0w==
 
+react-native-pager-view@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-pager-view/-/react-native-pager-view-6.7.0.tgz#88f2520e85f07ce55f3f56c57d6637249a215160"
+  integrity sha512-sutxKiMqBuQrEyt4mLaLNzy8taIC7IuYpxfcwQBXfSYBSSpAa0qE9G1FXlP/iXqTSlFgBXyK7BESsl9umOjECQ==
+
 react-native-radial-gradient@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-native-radial-gradient/-/react-native-radial-gradient-1.2.1.tgz#52aa4f7f3a6d2cd4a81d13e1feed8aba28d469bb"
@@ -5767,6 +5793,13 @@ react-native-screens@^4.10.0:
   dependencies:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
+
+react-native-tab-view@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-4.0.8.tgz#8aa2be0e7b31e6010a7bed711c55fef234e1320a"
+  integrity sha512-ftcOPX3Wvf1Nj6pkzJDIVWQyEvDJQ+8FWsjrMoi9/yzfVHLIky69qbvVUzE+UdaIXV3j3CFfZ3l6fLeJHnl3HQ==
+  dependencies:
+    use-latest-callback "^0.2.1"
 
 react-native-vector-icons@^10.2.0:
   version "10.2.0"

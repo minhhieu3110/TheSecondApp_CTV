@@ -8,7 +8,7 @@ import ScrollView from './base/ScrollView';
 import Button from './base/Button';
 import SelectInput from './form/SelectInput';
 import Header from './header/Header';
-import HeaderTile from './header/HeaderTitle';
+import HeaderTile from './header/HeaderTitle';import HeaderMain from './header/HeaderMain';
 export {
   Block,
   Text,
@@ -20,5 +20,5 @@ export {
   ScrollView,
   SelectInput,
   Header,
-  HeaderTile,
+  HeaderTile,HeaderMain
 };

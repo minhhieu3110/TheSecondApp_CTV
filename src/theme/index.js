@@ -1,4 +1,5 @@
 export const COLORS = {
+  none: 'none',
   noProduct: '#ffe6e6',
   textNoProduct: '#ff5e5e',
   search: '#EDE8F9',

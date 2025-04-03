@@ -1,5 +1,5 @@
 import {icon, image} from '@assets';
-import {Block, Icon, Image, Pressable, Text} from '@components';
+import {Block, HeaderMain, Icon, Image, Pressable, Text} from '@components';
 import {width} from '@responsive';
 import {COLORS} from '@theme';
 import {useState} from 'react';
@@ -60,59 +60,10 @@ export default function HomeScreen() {
   };
   return (
     <Block flex backgroundColor={COLORS.gray10}>
-      <Block width={width} height={228}>
-        <Image
-          source={image.image_header}
-          width={'100%'}
-          height={'100%'}
-          resizeMode="cover">
-          <Block marginTop={20}>
-            <Text fontSize={18} semiBold color={COLORS.white} center>
-              Trần Thanh Hải
-            </Text>
-          </Block>
-          <Block absolute top={11} right={4} rowCenter gap={5}>
-            <Block width={27.6} height={26} justifyEnd>
-              <Image source={icon.icon_message} width={19.6} height={18} />
-              <Block
-                absolute
-                top={0}
-                right={0}
-                width={16}
-                height={16}
-                radius={16}
-                backgroundColor={COLORS.yellow3}
-                justifyCenter
-                alignCenter>
-                <Text fontSize={10} medium color={COLORS.black2}>
-                  17
-                </Text>
-              </Block>
-            </Block>
-            <Block width={27.6} height={26} justifyEnd>
-              <Icon
-                IconType={Ionicons}
-                iconName={'notifications'}
-                iconColor={COLORS.white}
-                iconSize={23}
-              />
-              <Block
-                absolute
-                top={0}
-                right={0}
-                width={16}
-                height={16}
-                radius={16}
-                backgroundColor={COLORS.yellow3}
-                justifyCenter
-                alignCenter>
-                <Text fontSize={10} medium color={COLORS.black2}>
-                  2
-                </Text>
-              </Block>
-            </Block>
-          </Block>
-          <Block marginTop={23} row gap={12} marginHorizontal={12}>
+      <HeaderMain title={'Trần Thanh Hải'} />
+      <Block absolute>
+        <Block marginTop={62}>
+          <Block row gap={12} marginHorizontal={12}>
             <Pressable
               onPress={handleReceive}
               width={(width - 36) / 2}
@@ -148,7 +99,7 @@ export default function HomeScreen() {
               </Text>
             </Pressable>
           </Block>
-          <Block row marginTop={15} gap={10} marginHorizontal={12}>
+          <Block row marginTop={15} gap={10} marginHorizontal={12} height={86}>
             {activity.map(item => (
               <Pressable
                 onPress={() => handleSeen(item.id)}
@@ -194,10 +145,12 @@ export default function HomeScreen() {
               </Pressable>
             ))}
           </Block>
-        </Image>
+        </Block>
       </Block>
-      {visibleJobReceive && <JobReceive />}
-      {visibleJobNew && <JobNew />}
+      <Block paddingTop={15} paddingHorizontal={12}>
+        {visibleJobReceive && <JobReceive />}
+        {visibleJobNew && <JobNew />}
+      </Block>
     </Block>
   );
 }

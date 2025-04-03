@@ -9,6 +9,7 @@ const commonStack = [
   {name: router.COMPLETE_TEST},
   {name: router.FAIL_TEST},
   {name: router.CHOOSE_SERVICE},
+  {name: router.DETAIL_INCOME},
 ];
 export default function CommonContainer() {
   return (
