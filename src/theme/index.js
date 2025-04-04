@@ -37,6 +37,7 @@ export const COLORS = {
   white50: 'rgba(255,255,255,0.5)',
   blue3: '#009CE1',
   placeholderOpacity: 'rgba(112,112,112,0.1)',
+  borderColor2: '#E9E9E9',
   pinkWhite3: '#FFE3E3',
   gray15: '#f1f1f1',
   pinkWhite3: '#FFECEC',

@@ -5,7 +5,7 @@ import {COLORS} from '@theme';
 import {useState} from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import JobReceive from './common/JobReceive';
-import JobNew from './common/JobNew';
+import JobNew from '../HistoryScreen/common/JobNew';
 export default function HomeScreen() {
   const d = new Date();
   const currentDate = new Date();

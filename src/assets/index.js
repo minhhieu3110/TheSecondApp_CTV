@@ -20,6 +20,14 @@ export const icon = {
   icon_staff: require('./icon/icon_staff.png'),
   icon_detail_work: require('./icon/icon_detail_work.png'),
   icon_times: require('./icon/icon_times.png'),
+  icon_wallet: require('./icon/icon_wallet.png'),
+  icon_evaluate: require('./icon/icon_evaluate.png'),
+  icon_rank: require('./icon/icon_rank.png'),
+  icon_new_job: require('./icon/icon_new_job.png'),
+  icon_receive_job: require('./icon/icon_receive_job.png'),
+  icon_doing_job: require('./icon/icon_doing_job.png'),
+  icon_complete_job: require('./icon/icon_complete_job.png'),
+  icon_reward: require('./icon/icon_reward.png'),
 };
 export const image = {
   image_san: require('./image/image_san.png'),
@@ -28,6 +36,7 @@ export const image = {
   image_san_3: require('./image/image_san_3.png'),
   image_map: require('./image/image_map.png'),
   image_header: require('./image/image_header.png'),
+  image_staff: require('./image/image_staff.png'),
 };
 export const lotties = {
   lottie_time: require('./lotties/Animation - 1740651527258.json'),

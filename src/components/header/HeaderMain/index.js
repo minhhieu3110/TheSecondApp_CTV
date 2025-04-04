@@ -9,7 +9,7 @@ export default function HeaderMain({title}) {
     <Block width={width} height={228}>
       <Image
         source={image.image_header}
-        width={'100%'}
+        width={width}
         height={228}
         resizeMode="cover"
       />

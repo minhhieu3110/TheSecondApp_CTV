@@ -21,14 +21,14 @@ import {
   format,
 } from 'date-fns';
 import {icon, image} from '@assets';
-import { commonRoot } from 'navigation/navigationRef';
+import {commonRoot} from 'navigation/navigationRef';
 import router from '@router';
 
 export default function IncomeScreen() {
   return (
     <Block flex backgroundColor={COLORS.gray10}>
       <HeaderMain title={'Thu nhập'} />
-      <Block absolute >
+      <Block absolute>
         <Block
           marginTop={57}
           backgroundColor={COLORS.black37}
@@ -112,7 +112,8 @@ export default function IncomeScreen() {
           </Block>
           <Block marginTop={15} gap={12}>
             {Array.from({length: 10}).map((_, index) => (
-              <Pressable onPress={() => commonRoot.navigate(router.DETAIL_INCOME)}
+              <Pressable
+                onPress={() => commonRoot.navigate(router.DETAIL_INCOME)}
                 key={index}
                 padding={12}
                 radius={8}

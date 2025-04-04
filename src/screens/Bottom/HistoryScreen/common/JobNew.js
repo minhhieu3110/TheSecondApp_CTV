@@ -1,14 +1,20 @@
 import {icon, image, lotties} from '@assets';
-import {Block, Image, ScrollView, Text} from '@components';
+import {Block, Image, Pressable, ScrollView, Text} from '@components';
 import {width} from '@responsive';
+import router from '@router';
 import {COLORS} from '@theme';
 import LottieView from 'lottie-react-native';
+import {commonRoot} from 'navigation/navigationRef';
 import RadialGradient from 'react-native-radial-gradient';
 export default function JobNew() {
   return (
     <ScrollView>
       <Block gap={14.8} radius={8}>
-        <Block backgroundColor={COLORS.white} padding={12} radius={8}>
+        <Pressable
+          onPress={() => commonRoot.navigate(router.DETAIL_JOB_NEW)}
+          backgroundColor={COLORS.white}
+          padding={12}
+          radius={8}>
           <Block rowCenter>
             <Image source={icon.icon_housework} width={59} height={66.87} />
             <Block marginLeft={15}>
@@ -112,7 +118,7 @@ export default function JobNew() {
               </Text>
             </Block>
           </Block>
-        </Block>
+        </Pressable>
       </Block>
     </ScrollView>
   );
