@@ -9,37 +9,23 @@ export default function AccountScreen() {
   return (
     <Block flex backgroundColor={COLORS.gray10}>
       {/* <HeaderMain /> */}
-      <ScrollView safeAreaBottom={100}>
-        <Block
-          width={width + 50}
-          height={292.79}
-          marginHorizontal={-25}
-          marginTop={-60}
-          borderBottomRadius={200}
-          backgroundColor={COLORS.gray10}
-          overflow={'hidden'}
-          justifyEnd
-          alignCenter>
-          <HeaderMain
-            title={
-              <Block alignCenter justifyCenter width={width}>
-                <Text fontSize={16} bold color={COLORS.white} uppercase center>
-                  Trần Thanh Hải
-                </Text>
-                <Text marginTop={14} fontSize={14} regular color={COLORS.white}>
-                  Haitran123@gmail.com
-                </Text>
-                <Text
-                  marginTop={11}
-                  fontSize={14}
-                  medium
-                  color={COLORS.yellow3}>
-                  09909 123 456
-                </Text>
-              </Block>
-            }
-          />
-        </Block>
+      <ScrollView contentContainerStyle={{paddingBottom: 20}}>
+        <HeaderMain
+          title={
+            <Block alignCenter justifyCenter width={width}>
+              <Text fontSize={16} bold color={COLORS.white} uppercase center>
+                Trần Thanh Hải
+              </Text>
+              <Text marginTop={14} fontSize={14} regular color={COLORS.white}>
+                Haitran123@gmail.com
+              </Text>
+              <Text marginTop={11} fontSize={14} medium color={COLORS.yellow3}>
+                09909 123 456
+              </Text>
+            </Block>
+          }
+        />
+
         <Block alignCenter>
           <Block
             width={101}
@@ -168,7 +154,7 @@ export default function AccountScreen() {
                           IconType={Octicons}
                           iconName={'chevron-right'}
                           iconColor={COLORS.lightGray1}
-                          iconSize={'100%'}
+                          iconSize={13}
                         />
                       </Block>
                     </Block>
@@ -218,7 +204,7 @@ export default function AccountScreen() {
                           IconType={Octicons}
                           iconName={'chevron-right'}
                           iconColor={COLORS.lightGray1}
-                          iconSize={'100%'}
+                          iconSize={13}
                         />
                       </Block>
                     </Block>
@@ -264,7 +250,7 @@ export default function AccountScreen() {
                           IconType={Octicons}
                           iconName={'chevron-right'}
                           iconColor={COLORS.lightGray1}
-                          iconSize={'100%'}
+                          iconSize={13}
                         />
                       </Block>
                     </Block>
@@ -314,7 +300,7 @@ export default function AccountScreen() {
                           IconType={Octicons}
                           iconName={'chevron-right'}
                           iconColor={COLORS.lightGray1}
-                          iconSize={'100%'}
+                          iconSize={13}
                         />
                       </Block>
                     </Block>
@@ -346,7 +332,7 @@ export default function AccountScreen() {
                       IconType={Octicons}
                       iconName={'chevron-right'}
                       iconColor={COLORS.yellow3}
-                      iconSize={'100%'}
+                      iconSize={13}
                     />
                   </Block>
                 </Block>
@@ -361,6 +347,244 @@ export default function AccountScreen() {
               <Image source={icon.icon_reward} width={123} height={116} />
             </Block>
           </RadialGradient>
+        </Block>
+        <Block
+          marginTop={15}
+          marginHorizontal={12}
+          backgroundColor={COLORS.white}
+          radius={8}
+          paddingBottom={12}>
+          <Block marginTop={17} marginHorizontal={12}>
+            <Text fontSize={15} semiBold color={COLORS.black2}>
+              Tài khoản
+            </Text>
+            <Block marginTop={18}>
+              <Block rowCenter>
+                <Block
+                  width={50}
+                  height={50}
+                  radius={50}
+                  backgroundColor={COLORS.pinkWhite2}
+                  justifyCenter
+                  alignCenter>
+                  <Image
+                    source={icon.icon_config_account}
+                    width={17.88}
+                    height={20}
+                  />
+                </Block>
+                <Block marginLeft={15} width={width - 117}>
+                  <Block rowCenter spaceBetween>
+                    <Text fontSize={15} regular color={COLORS.black2}>
+                      Thiết lập tài khoản
+                    </Text>
+
+                    <Block marginLeft={12} width={7} height={11.67}>
+                      <Icon
+                        IconType={Octicons}
+                        iconName={'chevron-right'}
+                        iconColor={COLORS.lightGray1}
+                        iconSize={13}
+                      />
+                    </Block>
+                  </Block>
+                </Block>
+              </Block>
+              <Block marginTop={12} alignEnd>
+                <Block
+                  width={width - 117}
+                  borderWidth={1}
+                  borderColor={COLORS.borderColor2}
+                />
+              </Block>
+              <Block rowCenter marginTop={12}>
+                <Block
+                  width={50}
+                  height={50}
+                  radius={50}
+                  backgroundColor={COLORS.pinkWhite2}
+                  justifyCenter
+                  alignCenter>
+                  <Image source={icon.icon_service} width={17.88} height={20} />
+                </Block>
+                <Block marginLeft={15} width={width - 117}>
+                  <Block rowCenter spaceBetween>
+                    <Text fontSize={15} regular color={COLORS.black2}>
+                      Dịch vụ
+                    </Text>
+
+                    <Block marginLeft={12} width={7} height={11.67}>
+                      <Icon
+                        IconType={Octicons}
+                        iconName={'chevron-right'}
+                        iconColor={COLORS.lightGray1}
+                        iconSize={13}
+                      />
+                    </Block>
+                  </Block>
+                </Block>
+              </Block>
+              <Block marginTop={12} alignEnd>
+                <Block
+                  width={width - 117}
+                  borderWidth={1}
+                  borderColor={COLORS.borderColor2}
+                />
+              </Block>
+              <Block rowCenter marginTop={12}>
+                <Block
+                  width={50}
+                  height={50}
+                  radius={50}
+                  backgroundColor={COLORS.pinkWhite2}
+                  justifyCenter
+                  alignCenter>
+                  <Image
+                    source={icon.icon_income_1}
+                    width={17.88}
+                    height={20}
+                  />
+                </Block>
+                <Block marginLeft={15} width={width - 117}>
+                  <Block rowCenter spaceBetween>
+                    <Text fontSize={15} regular color={COLORS.black2}>
+                      Thu nhập
+                    </Text>
+
+                    <Block marginLeft={12} width={7} height={11.67}>
+                      <Icon
+                        IconType={Octicons}
+                        iconName={'chevron-right'}
+                        iconColor={COLORS.lightGray1}
+                        iconSize={13}
+                      />
+                    </Block>
+                  </Block>
+                </Block>
+              </Block>
+              <Block marginTop={12} alignEnd>
+                <Block
+                  width={width - 117}
+                  borderWidth={1}
+                  borderColor={COLORS.borderColor2}
+                />
+              </Block>
+              <Block rowCenter marginTop={12}>
+                <Block
+                  width={50}
+                  height={50}
+                  radius={50}
+                  backgroundColor={COLORS.pinkWhite2}
+                  justifyCenter
+                  alignCenter>
+                  <Image
+                    source={icon.icon_reffer_friend}
+                    width={17.88}
+                    height={20}
+                  />
+                </Block>
+                <Block marginLeft={15} width={width - 117}>
+                  <Block rowCenter spaceBetween>
+                    <Text fontSize={15} regular color={COLORS.black2}>
+                      Giới thiệu bạn bè
+                    </Text>
+
+                    <Block marginLeft={12} width={7} height={11.67}>
+                      <Icon
+                        IconType={Octicons}
+                        iconName={'chevron-right'}
+                        iconColor={COLORS.lightGray1}
+                        iconSize={13}
+                      />
+                    </Block>
+                  </Block>
+                </Block>
+              </Block>
+            </Block>
+          </Block>
+        </Block>
+        <Block
+          marginTop={15}
+          marginHorizontal={12}
+          backgroundColor={COLORS.white}
+          radius={8}
+          paddingBottom={12}>
+          <Block marginTop={17} marginHorizontal={12}>
+            <Text fontSize={15} semiBold color={COLORS.black2}>
+              Tiện ích
+            </Text>
+            <Block marginTop={18}>
+              <Block rowCenter>
+                <Block
+                  width={50}
+                  height={50}
+                  radius={50}
+                  backgroundColor={COLORS.pinkWhite2}
+                  justifyCenter
+                  alignCenter>
+                  <Image source={icon.icon_help} width={17.88} height={20} />
+                </Block>
+                <Block marginLeft={15} width={width - 117}>
+                  <Block rowCenter spaceBetween>
+                    <Text fontSize={15} regular color={COLORS.black2}>
+                      Hỗ trợ
+                    </Text>
+
+                    <Block marginLeft={12} width={7} height={11.67}>
+                      <Icon
+                        IconType={Octicons}
+                        iconName={'chevron-right'}
+                        iconColor={COLORS.lightGray1}
+                        iconSize={13}
+                      />
+                    </Block>
+                  </Block>
+                </Block>
+              </Block>
+              <Block marginTop={12} alignEnd>
+                <Block
+                  width={width - 117}
+                  borderWidth={1}
+                  borderColor={COLORS.borderColor2}
+                />
+              </Block>
+              <Block rowCenter marginTop={12}>
+                <Block
+                  width={50}
+                  height={50}
+                  radius={50}
+                  backgroundColor={COLORS.pinkWhite2}
+                  justifyCenter
+                  alignCenter>
+                  <Image source={icon.icon_setting} width={17.88} height={20} />
+                </Block>
+                <Block marginLeft={15} width={width - 117}>
+                  <Block rowCenter spaceBetween>
+                    <Text fontSize={15} regular color={COLORS.black2}>
+                      Cài đặt
+                    </Text>
+
+                    <Block marginLeft={12} width={7} height={11.67}>
+                      <Icon
+                        IconType={Octicons}
+                        iconName={'chevron-right'}
+                        iconColor={COLORS.lightGray1}
+                        iconSize={13}
+                      />
+                    </Block>
+                  </Block>
+                </Block>
+              </Block>
+            </Block>
+          </Block>
+        </Block>
+        <Block marginTop={12} alignEnd marginLeft={12} marginRight={21}>
+          <Block rowCenter>
+            <Image source={icon.icon_logout} width={30} height={30} />
+            <Text fontSize={15} regular color={COLORS.red4} marginLeft={10}>
+              Đăng xuất
+            </Text>
+          </Block>
         </Block>
       </ScrollView>
     </Block>

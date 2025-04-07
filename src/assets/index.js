@@ -28,6 +28,13 @@ export const icon = {
   icon_doing_job: require('./icon/icon_doing_job.png'),
   icon_complete_job: require('./icon/icon_complete_job.png'),
   icon_reward: require('./icon/icon_reward.png'),
+  icon_config_account: require('./icon/icon_config_account.png'),
+  icon_service: require('./icon/icon_service.png'),
+  icon_income_1: require('./icon/icome.png'),
+  icon_reffer_friend: require('./icon/icon_reffer_friend.png'),
+  icon_setting: require('./icon/icon_setting.png'),
+  icon_help: require('./icon/icon_help.png'),
+  icon_logout: require('./icon/icon_logout.png'),
 };
 export const image = {
   image_san: require('./image/image_san.png'),
