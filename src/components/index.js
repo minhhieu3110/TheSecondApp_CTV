@@ -11,6 +11,7 @@ import SelectInput from './form/SelectInput';
 import Header from './header/Header';
 import HeaderTile from './header/HeaderTitle';
 import HeaderMain from './header/HeaderMain';
+import RankStar from './base/RankStar';
 export {
   Block,
   Text,
@@ -25,4 +26,5 @@ export {
   Header,
   HeaderTile,
   HeaderMain,
+  RankStar,
 };

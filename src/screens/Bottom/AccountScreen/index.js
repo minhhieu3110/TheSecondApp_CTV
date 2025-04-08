@@ -1,7 +1,17 @@
 import {icon, image} from '@assets';
-import {Block, HeaderMain, Icon, Image, ScrollView, Text} from '@components';
+import {
+  Block,
+  HeaderMain,
+  Icon,
+  Image,
+  Pressable,
+  ScrollView,
+  Text,
+} from '@components';
 import {width} from '@responsive';
+import router from '@router';
 import {COLORS} from '@theme';
+import {commonRoot} from 'navigation/navigationRef';
 import RadialGradient from 'react-native-radial-gradient';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Octicons from 'react-native-vector-icons/Octicons';
@@ -44,7 +54,8 @@ export default function AccountScreen() {
           </Block>
         </Block>
         <Block marginTop={15} row gap={10} marginHorizontal={12}>
-          <Block
+          <Pressable
+            onPress={() => commonRoot.navigate(router.WALLET_OF_YOU)}
             width={(width - 44) / 3}
             paddingBottom={15}
             backgroundColor={COLORS.white}
@@ -62,8 +73,9 @@ export default function AccountScreen() {
             <Text fontSize={14} semiBold color={COLORS.red4} marginTop={11}>
               23.000.000đ
             </Text>
-          </Block>
-          <Block
+          </Pressable>
+          <Pressable
+            onPress={() => commonRoot.navigate(router.EVALUATE)}
             width={(width - 44) / 3}
             paddingBottom={15}
             backgroundColor={COLORS.white}
@@ -90,8 +102,9 @@ export default function AccountScreen() {
                 iconSize={18}
               />
             </Block>
-          </Block>
-          <Block
+          </Pressable>
+          <Pressable
+            onPress={() => commonRoot.navigate(router.RANK_STAFF)}
             width={(width - 44) / 3}
             paddingBottom={15}
             backgroundColor={COLORS.white}
@@ -109,7 +122,7 @@ export default function AccountScreen() {
             <Text fontSize={14} semiBold color={COLORS.red4} marginTop={11}>
               Hạng vàng
             </Text>
-          </Block>
+          </Pressable>
         </Block>
         <Block
           marginTop={15}

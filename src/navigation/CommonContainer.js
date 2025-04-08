@@ -15,6 +15,13 @@ const commonStack = [
   {name: router.DETAIL_DOING_JOB},
   {name: router.DETAIL_COMPLETE_JOB},
   {name: router.DETAIL_CANCEL_JOB},
+  {name: router.WALLET_OF_YOU},
+  {name: router.RECHARGE},
+  {name: router.INFO_RECHARGE},
+  {name: router.WITHDRAW},
+  {name: router.HISTORY_INCOME},
+  {name: router.EVALUATE},
+  {name: router.RANK_STAFF},
 ];
 export default function CommonContainer() {
   return (

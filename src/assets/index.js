@@ -35,6 +35,19 @@ export const icon = {
   icon_setting: require('./icon/icon_setting.png'),
   icon_help: require('./icon/icon_help.png'),
   icon_logout: require('./icon/icon_logout.png'),
+  icon_recharge: require('./icon/icon_recharge.png'),
+  icon_withdraw: require('./icon/icon_withdraw.png'),
+  icon_history_income: require('./icon/icon_history_income.png'),
+  ic_withdraw: require('./icon/withdraw_icon.png'),
+  ic_withdraw_success: require('./icon/withdraw_success_icon.png'),
+  ic_recharge_success: require('./icon/recharge_success_icon.png'),
+  icon_transfer: require('./icon/icon_transfer.png'),
+  icon_star: require('./icon/icon_star.png'),
+  icon_star_dis: require('./icon/icon_star_dis.png'),
+  rank_bronze: require('./icon/rank_bronze.png'),
+  rank_silver: require('./icon/rank_silver.png'),
+  rank_gold: require('./icon/rank_gold.png'),
+  rank_diamon: require('./icon/rank_diamon.png'),
 };
 export const image = {
   image_san: require('./image/image_san.png'),
@@ -44,6 +57,8 @@ export const image = {
   image_map: require('./image/image_map.png'),
   image_header: require('./image/image_header.png'),
   image_staff: require('./image/image_staff.png'),
+  image_san_service: require('./image/image_san_service.png'),
+  image_qr_code: require('./image/image_qr_code.png'),
 };
 export const lotties = {
   lottie_time: require('./lotties/Animation - 1740651527258.json'),

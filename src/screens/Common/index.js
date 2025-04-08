@@ -10,6 +10,13 @@ import Detail_ReceiveJob from './DetailJob/Detail_RecceiveJob';
 import Detail_DoingJob from './DetailJob/Detail_DoingJob';
 import Detail_CompleteJob from './DetailJob/Detail_CompleteJob';
 import Detail_CancelJob from './DetailJob/Detail_CancelJob';
+import Wallet from './Wallet';
+import Recharge from './Recharge';
+import InfoRecharge from './Recharge/common/RechargeInfo';
+import Withdraw from './Withdraw';
+import History from './History';
+import Evaluate from './Evaluate';
+import RankStaff from './RankStaff';
 
 export const common = {
   [router.TESTS]: Tests,
@@ -23,4 +30,11 @@ export const common = {
   [router.DETAIL_DOING_JOB]: Detail_DoingJob,
   [router.DETAIL_COMPLETE_JOB]: Detail_CompleteJob,
   [router.DETAIL_CANCEL_JOB]: Detail_CancelJob,
+  [router.WALLET_OF_YOU]: Wallet,
+  [router.RECHARGE]: Recharge,
+  [router.INFO_RECHARGE]: InfoRecharge,
+  [router.WITHDRAW]: Withdraw,
+  [router.HISTORY_INCOME]: History,
+  [router.EVALUATE]: Evaluate,
+  [router.RANK_STAFF]: RankStaff,
 };

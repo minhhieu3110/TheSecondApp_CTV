@@ -20,7 +20,6 @@ const HeaderTile = ({
   colorText,
   uppercase = false,
   background = false,
-  absolute = true,
 }) => {
   const navigation = useNavigation();
 
@@ -37,12 +36,7 @@ const HeaderTile = ({
     }
   };
   return background ? (
-    <Block
-      absolute={absolute}
-      zIndex={10}
-      width={width}
-      height={53}
-      backgroundColor={background}>
+    <Block zIndex={10} width={width} height={53} backgroundColor={background}>
       <Pressable
         onPress={handleBack}
         height={30}
@@ -67,19 +61,21 @@ const HeaderTile = ({
         )}
         {colorText ? (
           <Text
-            marginLeft={10}
+            width={width - 46}
             fontSize={15}
             semiBold
             color={colorText}
+            center
             uppercase={uppercase}>
             {title}
           </Text>
         ) : (
           <Text
-            marginLeft={10}
+            width={width - 46}
             fontSize={15}
             semiBold
             color={COLORS.black2}
+            center
             uppercase={uppercase}>
             {title}
           </Text>
@@ -112,19 +108,21 @@ const HeaderTile = ({
         )}
         {colorText ? (
           <Text
-            marginLeft={10}
+            width={width - 46}
             fontSize={15}
             semiBold
             color={colorText}
+            center
             uppercase={uppercase}>
             {title}
           </Text>
         ) : (
           <Text
-            marginLeft={10}
+            width={width - 46}
             fontSize={15}
             semiBold
             color={COLORS.black2}
+            center
             uppercase={uppercase}>
             {title}
           </Text>
