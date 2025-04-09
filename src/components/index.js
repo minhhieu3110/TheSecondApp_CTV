@@ -12,6 +12,7 @@ import Header from './header/Header';
 import HeaderTile from './header/HeaderTitle';
 import HeaderMain from './header/HeaderMain';
 import RankStar from './base/RankStar';
+import Switch from './base/Switch';
 export {
   Block,
   Text,
@@ -27,4 +28,5 @@ export {
   HeaderTile,
   HeaderMain,
   RankStar,
+  Switch,
 };

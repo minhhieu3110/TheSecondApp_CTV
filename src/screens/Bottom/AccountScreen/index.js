@@ -372,7 +372,9 @@ export default function AccountScreen() {
               Tài khoản
             </Text>
             <Block marginTop={18}>
-              <Block rowCenter>
+              <Pressable
+                onPress={() => commonRoot.navigate(router.CONFIG_ACCOUNT)}
+                rowCenter>
                 <Block
                   width={50}
                   height={50}
@@ -402,7 +404,7 @@ export default function AccountScreen() {
                     </Block>
                   </Block>
                 </Block>
-              </Block>
+              </Pressable>
               <Block marginTop={12} alignEnd>
                 <Block
                   width={width - 117}
@@ -410,7 +412,10 @@ export default function AccountScreen() {
                   borderColor={COLORS.borderColor2}
                 />
               </Block>
-              <Block rowCenter marginTop={12}>
+              <Pressable
+                onPress={() => commonRoot.navigate(router.SERVICE)}
+                rowCenter
+                marginTop={12}>
                 <Block
                   width={50}
                   height={50}
@@ -436,7 +441,7 @@ export default function AccountScreen() {
                     </Block>
                   </Block>
                 </Block>
-              </Block>
+              </Pressable>
               <Block marginTop={12} alignEnd>
                 <Block
                   width={width - 117}
@@ -482,7 +487,10 @@ export default function AccountScreen() {
                   borderColor={COLORS.borderColor2}
                 />
               </Block>
-              <Block rowCenter marginTop={12}>
+              <Pressable
+                onPress={() => commonRoot.navigate(router.REFER_FRIEND)}
+                rowCenter
+                marginTop={12}>
                 <Block
                   width={50}
                   height={50}
@@ -512,7 +520,7 @@ export default function AccountScreen() {
                     </Block>
                   </Block>
                 </Block>
-              </Block>
+              </Pressable>
             </Block>
           </Block>
         </Block>
@@ -527,7 +535,9 @@ export default function AccountScreen() {
               Tiện ích
             </Text>
             <Block marginTop={18}>
-              <Block rowCenter>
+              <Pressable
+                onPress={() => commonRoot.navigate(router.HELP)}
+                rowCenter>
                 <Block
                   width={50}
                   height={50}
@@ -553,7 +563,7 @@ export default function AccountScreen() {
                     </Block>
                   </Block>
                 </Block>
-              </Block>
+              </Pressable>
               <Block marginTop={12} alignEnd>
                 <Block
                   width={width - 117}
@@ -561,7 +571,10 @@ export default function AccountScreen() {
                   borderColor={COLORS.borderColor2}
                 />
               </Block>
-              <Block rowCenter marginTop={12}>
+              <Pressable
+                onPress={() => commonRoot.navigate(router.SETTING)}
+                rowCenter
+                marginTop={12}>
                 <Block
                   width={50}
                   height={50}
@@ -587,7 +600,7 @@ export default function AccountScreen() {
                     </Block>
                   </Block>
                 </Block>
-              </Block>
+              </Pressable>
             </Block>
           </Block>
         </Block>

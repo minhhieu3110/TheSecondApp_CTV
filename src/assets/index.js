@@ -48,6 +48,9 @@ export const icon = {
   rank_silver: require('./icon/rank_silver.png'),
   rank_gold: require('./icon/rank_gold.png'),
   rank_diamon: require('./icon/rank_diamon.png'),
+  icon_qr_refer: require('./icon/icon_qr_refer.png'),
+  icon_share_refer: require('./icon/icon_share_refer.png'),
+  icon_zalo: require('./icon/zalo_icon.png'),
 };
 export const image = {
   image_san: require('./image/image_san.png'),
@@ -59,6 +62,7 @@ export const image = {
   image_staff: require('./image/image_staff.png'),
   image_san_service: require('./image/image_san_service.png'),
   image_qr_code: require('./image/image_qr_code.png'),
+  image_refer: require('./image/image_refer_friend.png'),
 };
 export const lotties = {
   lottie_time: require('./lotties/Animation - 1740651527258.json'),

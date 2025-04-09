@@ -17,6 +17,17 @@ import Withdraw from './Withdraw';
 import History from './History';
 import Evaluate from './Evaluate';
 import RankStaff from './RankStaff';
+import ConfigAccount from './ConfigAccount';
+import Setting from './Setting';
+import Service from './Service';
+import ReferFriend from './ReferFriend';
+import TheQuestion from './Help/common/TheQuestion';
+import TermsOfUse from './Help/common/TermsOfUse';
+import PrivacySecurity from './Help/common/PrivacySecurity';
+import Help from './Help';
+import Message from './Message';
+import DetailMessage from './Message/DetailMessage';
+import Notification from './Notification';
 
 export const common = {
   [router.TESTS]: Tests,
@@ -37,4 +48,15 @@ export const common = {
   [router.HISTORY_INCOME]: History,
   [router.EVALUATE]: Evaluate,
   [router.RANK_STAFF]: RankStaff,
+  [router.CONFIG_ACCOUNT]: ConfigAccount,
+  [router.SETTING]: Setting,
+  [router.SERVICE]: Service,
+  [router.REFER_FRIEND]: ReferFriend,
+  [router.HELP]: Help,
+  [router.THEQUESTION]: TheQuestion,
+  [router.TERMS_OF_USE]: TermsOfUse,
+  [router.PRIVACY_SECURITY]: PrivacySecurity,
+  [router.MESSAGE]: Message,
+  [router.DETAIL_MESSAGE]: DetailMessage,
+  [router.NOTIFICATION]: Notification,
 };

@@ -135,6 +135,7 @@ export const COLORS = {
   black80: 'rgba(0,0,0,0.8)',
   black70: 'rgba(0,0,0,0.7)',
   black37: 'rgba(0,0,0,0.37)',
+  black30: 'rgba(0,0,0,0.3)',
   whitePink: '#C8DAFF',
   inActiveText: '#8A8A8A',
   inActiveRadio: '#D5D5D5',

@@ -1,7 +1,9 @@
 import {icon, image} from '@assets';
-import {Block, Icon, Image, Text} from '@components';
+import {Block, Icon, Image, Pressable, Text} from '@components';
 import {width} from '@responsive';
+import router from '@router';
 import {COLORS} from '@theme';
+import {commonRoot} from 'navigation/navigationRef';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function HeaderMain({title}) {
@@ -20,7 +22,11 @@ export default function HeaderMain({title}) {
         </Text>
       </Block>
       <Block absolute top={11} right={4} rowCenter gap={5} zIndex={100}>
-        <Block width={27.6} height={26} justifyEnd>
+        <Pressable
+          onPress={() => commonRoot.navigate(router.MESSAGE)}
+          width={27.6}
+          height={26}
+          justifyEnd>
           <Image source={icon.icon_message} width={19.6} height={18} />
           <Block
             absolute
@@ -36,8 +42,12 @@ export default function HeaderMain({title}) {
               17
             </Text>
           </Block>
-        </Block>
-        <Block width={27.6} height={26} justifyEnd>
+        </Pressable>
+        <Pressable
+          onPress={() => commonRoot.navigate(router.NOTIFICATION)}
+          width={27.6}
+          height={26}
+          justifyEnd>
           <Icon
             IconType={Ionicons}
             iconName={'notifications'}
@@ -58,7 +68,7 @@ export default function HeaderMain({title}) {
               2
             </Text>
           </Block>
-        </Block>
+        </Pressable>
       </Block>
     </Block>
   );
