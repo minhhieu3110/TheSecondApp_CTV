@@ -1,5 +1,6 @@
 {
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "terminal.integrated.suggest.enabled": false
+  "terminal.integrated.suggest.enabled": false,
+  "postman.settings.dotenv-detection-notification-visibility": false
 }

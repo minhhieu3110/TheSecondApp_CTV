@@ -13,6 +13,7 @@ import HeaderTile from './header/HeaderTitle';
 import HeaderMain from './header/HeaderMain';
 import RankStar from './base/RankStar';
 import Switch from './base/Switch';
+import ProgressBar from './common/ProgressBar';
 export {
   Block,
   Text,
@@ -29,4 +30,5 @@ export {
   HeaderMain,
   RankStar,
   Switch,
+  ProgressBar,
 };

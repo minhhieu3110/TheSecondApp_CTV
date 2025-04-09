@@ -28,6 +28,8 @@ import Help from './Help';
 import Message from './Message';
 import DetailMessage from './Message/DetailMessage';
 import Notification from './Notification';
+import RewardProgram from './RewardProgram';
+import DetailUpComming from './RewardProgram/common/DetailUpComming';
 
 export const common = {
   [router.TESTS]: Tests,
@@ -59,4 +61,6 @@ export const common = {
   [router.MESSAGE]: Message,
   [router.DETAIL_MESSAGE]: DetailMessage,
   [router.NOTIFICATION]: Notification,
+  [router.REWARD_PROGRAM]: RewardProgram,
+  [router.DETAIL_UPCOMMING]: DetailUpComming,
 };

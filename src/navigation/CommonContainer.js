@@ -33,6 +33,8 @@ const commonStack = [
   {name: router.MESSAGE},
   {name: router.DETAIL_MESSAGE},
   {name: router.NOTIFICATION},
+  {name: router.REWARD_PROGRAM},
+  {name: router.DETAIL_UPCOMMING},
 ];
 export default function CommonContainer() {
   return (

@@ -11,7 +11,7 @@ import {
 import {width} from '@responsive';
 import router from '@router';
 import {COLORS} from '@theme';
-import {commonRoot} from 'navigation/navigationRef';
+import {bottomRoot, commonRoot} from 'navigation/navigationRef';
 import RadialGradient from 'react-native-radial-gradient';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Octicons from 'react-native-vector-icons/Octicons';
@@ -323,7 +323,8 @@ export default function AccountScreen() {
             </Block>
           </Block>
         </Block>
-        <Block
+        <Pressable
+          onPress={() => commonRoot.navigate(router.REWARD_PROGRAM)}
           marginHorizontal={12}
           height={120}
           width={width - 24}
@@ -360,7 +361,7 @@ export default function AccountScreen() {
               <Image source={icon.icon_reward} width={123} height={116} />
             </Block>
           </RadialGradient>
-        </Block>
+        </Pressable>
         <Block
           marginTop={15}
           marginHorizontal={12}
@@ -449,7 +450,10 @@ export default function AccountScreen() {
                   borderColor={COLORS.borderColor2}
                 />
               </Block>
-              <Block rowCenter marginTop={12}>
+              <Pressable
+                onPress={() => bottomRoot.navigate(router.INCOME_SCREEN)}
+                rowCenter
+                marginTop={12}>
                 <Block
                   width={50}
                   height={50}
@@ -479,7 +483,7 @@ export default function AccountScreen() {
                     </Block>
                   </Block>
                 </Block>
-              </Block>
+              </Pressable>
               <Block marginTop={12} alignEnd>
                 <Block
                   width={width - 117}

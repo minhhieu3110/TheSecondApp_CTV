@@ -51,6 +51,9 @@ export const icon = {
   icon_qr_refer: require('./icon/icon_qr_refer.png'),
   icon_share_refer: require('./icon/icon_share_refer.png'),
   icon_zalo: require('./icon/zalo_icon.png'),
+  icon_points_achieved: require('./icon/icon_points_achieved.png'),
+  icon_bonus: require('./icon/icon_bonus.png'),
+  icon_point_bonus: require('./icon/icon_point_bonus.png'),
 };
 export const image = {
   image_san: require('./image/image_san.png'),
