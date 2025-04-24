@@ -1,3 +1,4 @@
+import actions from '@actions';
 import {image} from '@assets';
 import {
   Block,
@@ -12,8 +13,22 @@ import {width} from '@responsive';
 import router from '@router';
 import {COLORS} from '@theme';
 import {authRoot, root} from 'navigation/navigationRef';
+import {useState} from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {useDispatch} from 'react-redux';
 export default function RegisterScreen() {
+  const dispatch = useDispatch();
+  const [phone, setPhone] = useState();
+  const sendOTP = () => {
+    // dispatch({
+    //   type: actions.SEND_OTP,
+    //   body: {phone: phone, type: 'signup'},
+    //   onSuccess: () => {
+    //     authRoot.navigate(router.INPUT_OTP);
+    //   },
+    // });
+    console.log('11');
+  };
   return (
     <Block flex backgroundColor={COLORS.gray10}>
       <Header />
@@ -41,9 +56,11 @@ export default function RegisterScreen() {
               fontSize={14}
               regular
               marginTop={23}
+              value={phone}
+              onChangeText={setPhone}
             />
             <Pressable
-              onPress={() => authRoot.navigate(router.INPUT_OTP)}
+              onPress={sendOTP}
               height={48}
               radius={8}
               backgroundColor={COLORS.red4}
