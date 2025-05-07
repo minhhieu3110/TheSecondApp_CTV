@@ -1,4 +1,4 @@
-import store from '@redux/actions';
+import store from '@redux/store';
 import axios from 'axios';
 import {handleExpiredToken, throttle} from './helper';
 

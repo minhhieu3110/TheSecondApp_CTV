@@ -7,8 +7,8 @@ import {
 import {persistReducer, persistStore} from 'redux-persist';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import createSagaMiddleware from 'redux-saga';
-import rootReducers from 'redux/reducers';
-import rootSaga from 'redux/sagas';
+import rootReducer from 'redux/reducers';
+import rootSaga from '../sagas';
 
 const persistConfig = {
   key: 'root',
@@ -17,7 +17,7 @@ const persistConfig = {
   whitelist: ['user', 'other'],
 };
 
-const pReducer = persistReducer(persistConfig, rootReducers);
+const pReducer = persistReducer(persistConfig, rootReducer);
 
 const middlewares = [];
 const sagaMiddleware = createSagaMiddleware();

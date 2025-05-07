@@ -1,33 +1,22 @@
 import actions from '@actions';
 import {image} from '@assets';
-import {
-  Block,
-  Header,
-  Icon,
-  Image,
-  Pressable,
-  Text,
-  TextInput,
-} from '@components';
-import {width} from '@responsive';
-import router from '@router';
+import {Block, Header, Pressable, Text, TextInput} from '@components';
 import {COLORS} from '@theme';
-import {authRoot, root} from 'navigation/navigationRef';
-import {useState} from 'react';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {useEffect, useState} from 'react';
 import {useDispatch} from 'react-redux';
 export default function RegisterScreen() {
-  const dispatch = useDispatch();
   const [phone, setPhone] = useState();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch({
+      type: actions.ENTRANCE_TEST,
+    });
+  });
   const sendOTP = () => {
-    // dispatch({
-    //   type: actions.SEND_OTP,
-    //   body: {phone: phone, type: 'signup'},
-    //   onSuccess: () => {
-    //     authRoot.navigate(router.INPUT_OTP);
-    //   },
-    // });
-    console.log('11');
+    dispatch({
+      type: actions.SEND_OTP,
+      body: {phone: phone, type: 'signup'},
+    });
   };
   return (
     <Block flex backgroundColor={COLORS.gray10}>
@@ -44,7 +33,7 @@ export default function RegisterScreen() {
               Xin chào!
             </Text>
             <Text fontSize={15} regular color={COLORS.black2} marginTop={18}>
-              Vui lòng nhập số điện thoại để đăng nhập
+              Vui lòng nhập số điện thoại để đăng ký
             </Text>
             <TextInput
               placeholder={'Nhập số điện thoại'}

@@ -1,8 +1,8 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
+    "extends": "@react-native/typescript-config/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
       "@assets": ["assets"],
       "@assets/*": ["assets/*"],
       "@constants": ["constants"],
@@ -18,5 +18,6 @@
       "@theme": ["theme"],
       "@hooks": ["hooks"]
     }
-  }
+    }
+
 }
